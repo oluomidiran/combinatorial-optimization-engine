@@ -88,7 +88,7 @@ Month-by-month numbers are in `results/Monthly_Strategy.csv`.
 
 The version that produced the report used `ind2sub`, which counts from 1, directly as a headcount. That skipped the 41 first-block splits with zero Support or zero New Business, so the eight-hour run covered $190 \times 231^{3} \approx 2.34$ billion of the 2.85 billion strategies. The bug turned up in a review of the code in November 2026.
 
-A full re-run confirmed that the strategy above is the optimum over all 2.85 billion six-month-block strategies, and that the best strategy in the skipped region reaches only $3,865,141.60. The script in this repository has the one-line fix, with a comment where it sits. The Python replication will carry this check as its own test.
+A full re-run, done during the November 2026 review, confirmed that the strategy above is the optimum over all 2.85 billion six-month-block strategies, and that the best strategy in the skipped region reaches only $3,865,141.60. The script in this repository has the one-line fix, with a comment where it sits. The Python replication will carry this check as its own test.
 
 ## Files
 
